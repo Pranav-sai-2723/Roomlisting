@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Room for Rent — ₹9,500/month</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Room for Rent — ₹8,500/month</title>
 <style>
   :root{
     --ink:#241C15;
@@ -12,136 +12,65 @@
     --moss:#4B5E45;
     --line:#D8CBB0;
     --muted:#6B6154;
+    --card:#EDE4D0;
+    --tag-bg:#241C15;
+    --tag-fg:#F6F0E4;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
     background:var(--paper);
     color:var(--ink);
-    font-family:'Georgia', 'Times New Roman', serif;
+    font-family:Georgia,'Times New Roman',serif;
     line-height:1.5;
     padding-bottom:60px;
   }
-  header{
-    padding:28px 20px 20px;
-    border-bottom:2px solid var(--ink);
-  }
+  header{padding:28px 20px 20px;border-bottom:2px solid var(--ink);}
   .eyebrow{
-    font-family:'Courier New', monospace;
-    font-size:12px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--brick);
-    margin-bottom:6px;
+    font-family:'Courier New',monospace;
+    font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--brick);margin-bottom:6px;
   }
-  h1{
-    font-size:clamp(28px,7vw,42px);
-    font-weight:400;
-    letter-spacing:-0.5px;
-  }
+  h1{font-size:clamp(28px,7vw,42px);font-weight:400;letter-spacing:-0.5px;}
   .rent-tag{
-    display:inline-block;
-    margin-top:14px;
-    background:var(--ink);
-    color:var(--paper);
-    padding:10px 18px;
-    font-family:'Courier New', monospace;
-    font-size:20px;
-    letter-spacing:1px;
+    display:inline-block;margin-top:14px;
+    background:var(--tag-bg);color:var(--tag-fg);
+    padding:10px 18px;font-family:'Courier New',monospace;
+    font-size:20px;letter-spacing:1px;
   }
-  .rent-tag span{color:#D9A566;}
-
   main{max-width:640px;margin:0 auto;padding:0 20px;}
-
-  .media-block{
-    margin-top:28px;
-  }
-  .slot{
-    background:#EDE4D0;
-    border:1.5px dashed var(--muted);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--muted);
-    font-family:'Courier New', monospace;
-    font-size:13px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-  }
-  .photo-slot{
-    height:220px;
-    margin-bottom:12px;
-  }
-  .video-slot{
-    height:200px;
-    margin-bottom:12px;
-  }
-
-  .details{
-    margin-top:32px;
-  }
+  .media-block{margin-top:28px;}
+  .media-block img{width:100%;height:auto;display:block;margin-bottom:12px;}
+  .details{margin-top:32px;}
   .details h2{
-    font-size:14px;
-    font-family:'Courier New', monospace;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--brick);
-    border-bottom:1px solid var(--line);
-    padding-bottom:8px;
-    margin-bottom:16px;
+    font-size:14px;font-family:'Courier New',monospace;
+    letter-spacing:2px;text-transform:uppercase;color:var(--brick);
+    border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:16px;
   }
-  ul.feature-list{
-    list-style:none;
-  }
+  ul.feature-list{list-style:none;}
   ul.feature-list li{
-    padding:10px 0;
-    border-bottom:1px solid var(--line);
-    display:flex;
-    gap:12px;
-    font-size:16px;
+    padding:10px 0;border-bottom:1px solid var(--line);
+    display:flex;gap:12px;font-size:16px;
   }
   ul.feature-list li:last-child{border-bottom:none;}
-  .mark{
-    color:var(--moss);
-    font-weight:bold;
-    flex-shrink:0;
-  }
-
+  .mark{color:var(--moss);font-weight:bold;flex-shrink:0;}
+  a{color:var(--brick);}
   .rent-detail{
-    margin-top:32px;
-    background:#EDE4D0;
-    padding:18px 20px;
-    border-left:4px solid var(--brick);
+    margin-top:32px;background:var(--card);
+    padding:18px 20px;border-left:4px solid var(--brick);
   }
-.rent-detail .amount{
-    font-size:22px;
-    font-family:'Courier New', monospace;
-  }
-  .rent-detail p{
-    margin-top:8px;
-    color:var(--muted);
-    font-size:14px;
-  }
+  .rent-detail .amount{font-size:22px;font-family:'Courier New',monospace;}
   .rent-detail p.highlight{
-    display:block;
-    margin-top:10px;
-    background:#D9A566;
-    color:#1a1208;
-    padding:10px 14px;
-    font-weight:bold;
-    font-size:15px;
-    border-radius:3px;
-    border:1px solid #ad7d3f;
+    margin-top:10px;background:#D9A566;color:#1a1208;
+    padding:10px 14px;font-weight:bold;font-size:15px;
+    border-radius:3px;border:1px solid #ad7d3f;
   }
-
   footer{
-    max-width:640px;
-    margin:40px auto 0;
-    padding:20px;
-    border-top:2px solid var(--ink);
-    text-align:center;
-    font-family:'Courier New', monospace;
-    font-size:13px;
-    color:var(--muted);
+    max-width:640px;margin:40px auto 0;padding:20px;
+    border-top:2px solid var(--ink);text-align:center;
+    font-family:'Courier New',monospace;font-size:13px;color:var(--muted);
   }
 </style>
 </head>
@@ -149,15 +78,15 @@
 
 <header>
   <div class="eyebrow">Single Room · Available Now</div>
+  <h1>Room for Rent</h1>
+  <div class="rent-tag">₹8,500 / month</div>
 </header>
 
 <main>
-
-   <div class="media-block">
-    <a href="p1.jpg"><img src="p1.jpg" style="width:100%;height:auto;display:block;margin-bottom:12px;"></a>
-    <a href="p2.jpg"><img src="p2.jpg" style="width:100%;height:auto;display:block;margin-bottom:12px;"></a>
-     <a href="p3.jpg"><img src="p3.jpg" style="width:100%;height:auto;display:block;margin-bottom:12px;"></a>
-
+  <div class="media-block">
+    <a href="p1.jpg"><img src="p1.jpg" alt="Room photo 1" loading="lazy"></a>
+    <a href="p2.jpg"><img src="p2.jpg" alt="Room photo 2" loading="lazy"></a>
+    <a href="p3.jpg"><img src="p3.jpg" alt="Room photo 3" loading="lazy"></a>
   </div>
 
   <div class="details">
@@ -184,9 +113,7 @@
   </div>
 </main>
 
-<footer>
-  Scan. Read. Call if it fits.
-</footer>
+<footer>Scan. Read. Call if it fits.</footer>
 
 </body>
 </html>
