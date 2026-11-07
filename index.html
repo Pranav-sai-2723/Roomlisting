@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room for Rent — ₹9,500/month</title>
+<style>
+  :root{
+    --ink:#241C15;
+    --paper:#F6F0E4;
+    --brick:#A8452E;
+    --moss:#4B5E45;
+    --line:#D8CBB0;
+    --muted:#6B6154;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Georgia', 'Times New Roman', serif;
+    line-height:1.5;
+    padding-bottom:60px;
+  }
+  header{
+    padding:28px 20px 20px;
+    border-bottom:2px solid var(--ink);
+  }
+  .eyebrow{
+    font-family:'Courier New', monospace;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--brick);
+    margin-bottom:6px;
+  }
+  h1{
+    font-size:clamp(28px,7vw,42px);
+    font-weight:400;
+    letter-spacing:-0.5px;
+  }
+  .rent-tag{
+    display:inline-block;
+    margin-top:14px;
+    background:var(--ink);
+    color:var(--paper);
+    padding:10px 18px;
+    font-family:'Courier New', monospace;
+    font-size:20px;
+    letter-spacing:1px;
+  }
+  .rent-tag span{color:#D9A566;}
+
+  main{max-width:640px;margin:0 auto;padding:0 20px;}
+
+  .media-block{
+    margin-top:28px;
+  }
+  .slot{
+    background:#EDE4D0;
+    border:1.5px dashed var(--muted);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    font-family:'Courier New', monospace;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+  }
+  .photo-slot{
+    height:220px;
+    margin-bottom:12px;
+  }
+  .video-slot{
+    height:200px;
+    margin-bottom:12px;
+  }
+
+  .details{
+    margin-top:32px;
+  }
+  .details h2{
+    font-size:14px;
+    font-family:'Courier New', monospace;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--brick);
+    border-bottom:1px solid var(--line);
+    padding-bottom:8px;
+    margin-bottom:16px;
+  }
+  ul.feature-list{
+    list-style:none;
+  }
+  ul.feature-list li{
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    gap:12px;
+    font-size:16px;
+  }
+  ul.feature-list li:last-child{border-bottom:none;}
+  .mark{
+    color:var(--moss);
+    font-weight:bold;
+    flex-shrink:0;
+  }
+
+  .rent-detail{
+    margin-top:32px;
+    background:#EDE4D0;
+    padding:18px 20px;
+    border-left:4px solid var(--brick);
+  }
+.rent-detail .amount{
+    font-size:22px;
+    font-family:'Courier New', monospace;
+  }
+  .rent-detail p{
+    margin-top:8px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  .rent-detail p.highlight{
+    display:block;
+    margin-top:10px;
+    background:#D9A566;
+    color:#1a1208;
+    padding:10px 14px;
+    font-weight:bold;
+    font-size:15px;
+    border-radius:3px;
+    border:1px solid #ad7d3f;
+  }
+
+  footer{
+    max-width:640px;
+    margin:40px auto 0;
+    padding:20px;
+    border-top:2px solid var(--ink);
+    text-align:center;
+    font-family:'Courier New', monospace;
+    font-size:13px;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Single Room · Available Now</div>
+</header>
+
+<main>
+
+  <div class="media-block">
+    <div class="slot photo-slot">Room photos go here</div>
+    <div class="slot video-slot">Room walkthrough video goes here</div>
+  </div>
+
+  <div class="details">
+    <h2>About the room</h2>
+    <ul class="feature-list">
+      <li><span class="mark">✓</span> Single room, independent</li>
+      <li><span class="mark">✓</span> No water problem — regular supply</li>
+      <li><span class="mark">✓</span> Thursday weekly market nearby for groceries and essentials</li>
+    </ul>
+  </div>
+
+  <div class="rent-detail">
+    <div class="amount">₹9,500 / month</div>
+    <p class="highlight">Rent includes current bill and maintenance — no separate charges.</p>
+  </div>
+
+  <div class="details">
+    <h2>Contact</h2>
+    <ul class="feature-list">
+      <li><span class="mark">☎</span> Number on the To-Let board</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  Scan. Read. Call if it fits.
+</footer>
+
+</body>
+</html>
